@@ -4,7 +4,7 @@ html {
 }
 
 *::selection {
-  background-color: #8dd6f7;
+  background-color: $selection;
 }
 
 *,
@@ -68,5 +68,15 @@ input {
 }
 
 body {
+  background-color: #fefeff;
   overflow-x: hidden;
+  color: $text;
+  font: 14px/15px $rr;
+}
+
+.container {
+  width: 100%;
+  padding-left: 190px;
+  padding-right: 190px;
+  margin: 0 auto;
 }
