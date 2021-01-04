@@ -44,13 +44,11 @@
 .product_card-container {
   padding-left: 43px;
   padding-right: 43px;
+  padding-bottom: 50px;
   margin: 0 auto;
 }
 
 .product_card-header {
-  position: absolute;
-  top: 0;
-  left: 0;
   border-bottom: 1px solid #cecece;
   display: flex;
   justify-content: space-between;
@@ -58,6 +56,7 @@
   background-color: rgba(255, 255, 255, 0.7);
   padding-top: 6px;
   padding-bottom: 6px;
+  border-radius: 13px 13px 0 0;
 }
 
 .product_card-code {
@@ -151,10 +150,12 @@
 }
 
 .product_card-btns {
-  margin-top: 11px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: absolute;
+  bottom: 25px;
+  padding-right: 40px;
 }
 
 .product_card-btn-add {
@@ -178,43 +179,10 @@
   }
 }
 
-.product_card-count-popup {
-  display: flex;
-  opacity: 0;
-  transition: 1s;
-  align-items: center;
-  right: -84px;
-  bottom: -66px;
-  position: absolute;
-  background-color: #fff;
-  border: 1px solid #cecece;
-  border-radius: 13px;
-  line-height: 20px;
-  padding: 23px;
-  z-index: 10;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -14px;
-    right: 167px;
-    background-color: #fff;
-    border: 1px solid #cecece;
-    border-bottom: #fff;
-    width: 28px;
-    height: 14px;
-    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-  }
-}
-
 .product_card-counter {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  &:hover .product_card-count-popup {
-    opacity: 1;
-  }
 }
 
 .product_card-control-btn {
@@ -251,6 +219,41 @@
   margin-right: 5px;
   text-align: center;
   width: 100%;
+
+  &:hover + .product_card-count-popup {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.product_card-count-popup {
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+  align-items: center;
+  right: -84px;
+  bottom: -66px;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #cecece;
+  border-radius: 13px;
+  line-height: 20px;
+  padding: 23px;
+  z-index: 10;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    right: 167px;
+    background-color: #fff;
+    border: 1px solid #cecece;
+    border-bottom: #fff;
+    width: 28px;
+    height: 14px;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  }
 }
 
 @import "media";
