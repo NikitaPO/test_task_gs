@@ -32,6 +32,14 @@
   border: 1px solid #cecece;
   box-shadow: 7px 7px 14px rgba(0, 0, 0, 0.03);
   margin-bottom: 20px;
+
+  &:hover .product_card-code-num {
+    color: $text;
+  }
+
+  &:hover .product_card-existence--in-stock {
+    color: $text-green;
+  }
 }
 
 .icon_info {
@@ -232,8 +240,8 @@
   opacity: 0;
   transition: 1s;
   align-items: center;
-  right: -84px;
-  bottom: -66px;
+  right: -86px;
+  bottom: -96px;
   position: absolute;
   background-color: #fff;
   border: 1px solid #cecece;

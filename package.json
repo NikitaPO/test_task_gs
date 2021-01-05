@@ -5,6 +5,7 @@
   "main": "app/index.html",
   "scripts": {
     "watch": "gulp",
+    "dev": "gulp",
     "build": "gulp build",
     "public": "gulp public",
     "public:full": "gulp publicWithImages",
