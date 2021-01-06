@@ -7,6 +7,10 @@
   .product_card {
     margin: 20px;
   }
+
+  .product_card-img-link {
+    height: 300px;
+  }
 }
 
 @media (max-width: 1260px) {
@@ -136,5 +140,8 @@
   .product_card-counter {
     width: 100%;
     justify-content: center;
+  }
+  .product_card-header {
+    font-size: 12px;
   }
 }
