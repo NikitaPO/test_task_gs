@@ -64,6 +64,16 @@
     order: 1;
     margin-left: 20px;
   }
+
+  .product_card-count-popup {
+    bottom: 54px;
+    right: 48px;
+
+    &::before {
+      bottom: -14px;
+      right: 180px;
+    }
+  }
 }
 
 @media (max-width: 780px) {
@@ -93,6 +103,16 @@
   .product_card-img-link {
     height: 180px;
   }
+
+  .product_card-count-popup {
+    right: -49px;
+    bottom: 54px;
+
+    &::before {
+      bottom: -14px;
+      right: 88px;
+    }
+  }
 }
 
 @media (max-width: 430px) {
@@ -100,10 +120,6 @@
   .product_card-header {
     padding-right: 20px;
     padding-left: 20px;
-  }
-
-  .product_card-btns {
-    padding-right: 20px;
   }
 
   .product_price-club {
@@ -157,5 +173,17 @@
   }
   .product_card-header {
     font-size: 12px;
+  }
+
+  .product_card-count-popup {
+    right: 21px;
+    bottom: 106px;
+    font-size: 12px;
+    line-height: 16px;
+
+    &::before {
+      bottom: -14px;
+      right: 93px;
+    }
   }
 }
