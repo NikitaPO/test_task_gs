@@ -247,8 +247,8 @@
 
 .product_card-count-popup {
   display: flex;
-  // visibility: hidden;
-  opacity: 1;
+  visibility: hidden;
+  opacity: 0;
   transition: 1s;
   align-items: center;
   right: -25px;
