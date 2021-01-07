@@ -1,5 +1,7 @@
 # test_task_gs
 
+Итоговый сайт на githubpages: [nikitapo.github.io/test_task_gs](nikitapo.github.io/test_task_gs)
+
 Для запуска в режиме разработки выполнить 
 
 `npm run dev` 
