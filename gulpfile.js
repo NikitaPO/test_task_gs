@@ -8,6 +8,7 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const del = require("del");
 const sourcemaps = require("gulp-sourcemaps");
+const babel = require("gulp-babel");
 
 function browsersync() {
   browserSync.init({
@@ -48,6 +49,11 @@ function images() {
 function scripts() {
   return src(["app/js/index.js"])
     .pipe(sourcemaps.init())
+    .pipe(
+      babel({
+        presets: ["@babel/preset-env"],
+      })
+    )
     .pipe(concat("index.min.js"))
     .pipe(uglify())
     .pipe(sourcemaps.write("../maps"))
