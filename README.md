@@ -1,6 +1,6 @@
 # test_task_gs
 
-Итоговый сайт на githubpages: [nikitapo.github.io/test_task_gs](nikitapo.github.io/test_task_gs)
+Итоговый сайт на githubpages: [nikitapo.github.io/test_task_gs](https://nikitapo.github.io/test_task_gs/)
 
 Основная дирректория проекта - app
 
