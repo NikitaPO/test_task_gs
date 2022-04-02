@@ -1,7 +1,7 @@
 # Выполненное тестовое задание для группы управляющих компаний
 Сайт компании: http://6550101.ru/
 
-Текст задания находится в дирректории task
+[Текст задания](task/README.docx)
 
 Итоговый сайт на githubpages: [nikitapo.github.io/test_task_gs](https://nikitapo.github.io/test_task_gs/)
 
