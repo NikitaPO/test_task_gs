@@ -5,8 +5,6 @@
 
 Итоговый сайт на githubpages: [nikitapo.github.io/test_task_gs](https://nikitapo.github.io/test_task_gs/)
 
-Основная дирректория проекта - app
-
 Для запуска в режиме разработки выполнить 
 
 `npm run dev` 
